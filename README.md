@@ -107,7 +107,7 @@ huggingface-cli download IntMeGroup/26B_mos1_ep2
 ### Alignment Score = mos2_Score_26B_1x0.5 + mos2_Score_26B_2x0.5
 ```bash
 huggingface-cli download IntMeGroup/26B_mos2_ep92
-huggingface-cli download IntMeGroup/26B_mos2_ep4
+huggingface-cli download IntMeGroup/26B_mos2_100_ep16_6458
 ```
 ### Aesthetic Score = mos3_Score_8Bx0.5 + mos3_Score_9Bx0.5
 ```bash
