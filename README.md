@@ -99,8 +99,13 @@ Aesthetic_MOS -- MOS3
 Temporal_MOS --MOS4
 
 ## Traditional_MOS
-### Overall Score = Score_8B + Score_26B
+### Traditional Score = Score_8B + Score_26B
 ```bash
 huggingface-cli download IntMeGroup/8B_mos1_ep200
 huggingface-cli download IntMeGroup/26B_mos1_ep2
+```
+### Alignment Score = Score_26B_1 + Score_26B_2
+```bash
+huggingface-cli download IntMeGroup/26B_mos2_ep92
+huggingface-cli download IntMeGroup/26B_mos2_ep4
 ```
