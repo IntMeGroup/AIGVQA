@@ -35,20 +35,36 @@ cd flash-attention
 git checkout v2.3.6
 python setup.py install
 ```
+
+
+
+# Track I 
+Overall Score = Score_8B_1 + Score_8B_2+ Score_26B_1 + Score_26B_2
+
+For Score_8B_1 & Score_8B_2
 ## 🔧 Preparation
 ### 📦 Prepare model weights
 
 ```bash
-huggingface-cli download anonymousdb/LOVE-pretrain temporal.pth ./
-```
-
-
-# Track I 
-Overall Score = S_8B1 + S_8B2+ S26B_1 + S26B_2
-
-For S_8B1 & S_8B2
-```bash
 cd AIGVQA_8B
+export HF_ENDPOINT=https://hf-mirror.com
+huggingface-cli download anonymousdb/LOVE-pretrain temporal.pth ./
+huggingface-cli download IntMeGroup/ICCVW_mos0_8B ./IntMeGroup/ICCVW_mos0_8B 
+huggingface-cli download IntMeGroup/ICCVW_mos0_st222 ./IntMeGroup/ICCVW_mos0_st222 
+```
+### 📁 Prepare dataset
+refine /data/GenAI_mos0.json
+"root": your_path_to_GenAIBench
+
+GenAIBench
+---val
+---train
+---test
+
+make sure the final test images are in dictory GenAIBench/test
+
+## 🚀 Evaluation
+```bash
 sh eval_score_overall1.sh
 sh eval_score_overall2.sh
 ```
