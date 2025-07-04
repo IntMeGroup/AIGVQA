@@ -44,9 +44,9 @@ The **Overall Score** is calculated as:
 
 ### Overall Score = Score_8B_1 + Score_8B_2+ Score_26B_1 + Score_26B_2
 
-### For **Score_8B_1** and **Score_8B_2**, follow the steps below:
-
 ---
+
+### For **Score_8B_1** and **Score_8B_2**, follow the steps below:
 
 ## 🔧 **Preparation**
 
