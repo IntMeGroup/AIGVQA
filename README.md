@@ -99,22 +99,22 @@ Aesthetic_MOS -- MOS3
 Temporal_MOS --MOS4
 
 ## Traditional_MOS
-### Traditional Score = Score_8B*0.5 + Score_26B*0.5
+### Traditional Score = mos1_Score_8Bx0.5 + mos1_Score_26Bx0.5
 ```bash
 huggingface-cli download IntMeGroup/8B_mos1_ep200
 huggingface-cli download IntMeGroup/26B_mos1_ep2
 ```
-### Alignment Score = Score_26B_1*0.5 + Score_26B_2*0.5
+### Alignment Score = mos2_Score_26B_1x0.5 + mos2_Score_26B_2x0.5
 ```bash
 huggingface-cli download IntMeGroup/26B_mos2_ep92
 huggingface-cli download IntMeGroup/26B_mos2_ep4
 ```
-### Aesthetic Score = Score_8B*0.5 + Score_9B*0.5
+### Aesthetic Score = mos3_Score_8Bx0.5 + mos3_Score_9Bx0.5
 ```bash
 huggingface-cli download IntMeGroup/ICCVW_st2_mos3
 huggingface-cli download IntMeGroup/ICCVW_mos3_8B
 ```
-### Temporal Score = Score_8B*0.4 + Score_26B_1*0.3 + Score_26B_2*0.3
+### Temporal Score = mos4_Score_8Bx0.4 + mos4_Score_26B_1x0.3 + mos4_Score_26B_2x0.3
 ```bash
 huggingface-cli download IntMeGroup/ICCVW_mos4_8B
 huggingface-cli download IntMeGroup/26B_mos4_20_ep33_8076
