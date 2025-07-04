@@ -42,9 +42,7 @@ python setup.py install
 
 The **Overall Score** is calculated as:
 
-\[
-\text{Overall Score} = \text{Score}_{8B_1} + \text{Score}_{8B_2} + \text{Score}_{26B_1} + \text{Score}_{26B_2}
-\]
+### Overall Score = Score_8B_1 + Score_8B_2+ Score_26B_1 + Score_26B_2
 
 ### For **Score_8B_1** and **Score_8B_2**, follow the steps below:
 
