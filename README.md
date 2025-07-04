@@ -85,8 +85,8 @@ GenAIBench
 ├── train
 └── test
 ```
-**make sure the final test images are in dictory GenAIBench/test
-**
+### make sure the final test images are in dictory GenAIBench/test
+
 ## 🚀 Evaluation
 Run the evaluation script:
 ```bash
