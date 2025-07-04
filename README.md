@@ -91,3 +91,16 @@ Run the evaluation script:
 sh shell/eval_score_overall1.sh
 sh shell/eval_score_overall2.sh
 ```
+
+# Track II - 4 Dimension Score Calculation
+Traditional_MOS -- MOS1
+Alignment_MOS -- MOS2
+Aesthetic_MOS -- MOS3
+Temporal_MOS --MOS4
+
+## Traditional_MOS
+### Overall Score = Score_8B + Score_26B
+```bash
+huggingface-cli download IntMeGroup/8B_mos1_ep200
+huggingface-cli download IntMeGroup/26B_mos1_ep2
+```
