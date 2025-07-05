@@ -66,8 +66,8 @@ export HF_ENDPOINT=https://hf-mirror.com
 3. Download the required model weights:
 ```bash
 huggingface-cli download anonymousdb/LOVE-pretrain temporal.pth --local-dir ./
-huggingface-cli download IntMeGroup/ICCVW_mos0_8B ./IntMeGroup/ICCVW_mos0_8B 
-huggingface-cli download IntMeGroup/ICCVW_mos0_st222 ./IntMeGroup/ICCVW_mos0_st222 
+huggingface-cli download IntMeGroup/ICCVW_mos0_8B --local-dir ./IntMeGroup/ICCVW_mos0_8B 
+huggingface-cli download IntMeGroup/ICCVW_mos0_st222 --local-dir ./IntMeGroup/ICCVW_mos0_st222 
 ```
 
 ### 📁 Prepare dataset
@@ -101,6 +101,7 @@ sh shell/eval_score_overall2.sh
 1. Navigate to the `AIGVQA_26B` directory: 
 
 ```bash
+cd ..
 cd AIGVQA_26B
 ```
 
@@ -112,8 +113,8 @@ export HF_ENDPOINT=https://hf-mirror.com
 3. Download the required model weights:
 ```bash
 huggingface-cli download anonymousdb/LOVE-pretrain temporal.pth --local-dir ./
-huggingface-cli download IntMeGroup/ICCVW_mos0_8B ./IntMeGroup/26B_mos0_20_ep49_6835
-huggingface-cli download IntMeGroup/ICCVW_mos0_st222 ./IntMeGroup/26B_mos0_100_ep6_6802
+huggingface-cli download IntMeGroup/ICCVW_mos0_8B --local-dir ./IntMeGroup/26B_mos0_20_ep49_6835
+huggingface-cli download IntMeGroup/ICCVW_mos0_st222 --local-dir ./IntMeGroup/26B_mos0_100_ep6_6802
 ```
 
 ### 📁 Prepare dataset
