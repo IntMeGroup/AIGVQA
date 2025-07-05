@@ -25,3 +25,4 @@ torchvision>=0.15
 tqdm
 transformers==4.37.2
 yacs
+openpyxl
