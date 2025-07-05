@@ -314,7 +314,7 @@ After the evaluation you will get 9 score files
         'AIGVQA_8B/weights/eval/mos1_1/mos1.csv',
         'AIGVQA_8B/weights/eval/mos3_1/mos3.csv',
         'AIGVQA_8B/weights/eval/mos4_1/mos4.csv',
-        'AIGVQA_9B/weights/eval/mos3_4/mos3.csv',
+        'AIGVQA_9B/weights/eval/mos3_2/mos3.csv',
         'AIGVQA_26B/weights/eval/mos1_2/mos1.csv'
         'AIGVQA_26B/weights/eval/mos2_1/mos2.csv'
         'AIGVQA_26B/weights/eval/mos2_2/mos2.csv'
