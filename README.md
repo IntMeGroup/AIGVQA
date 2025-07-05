@@ -113,8 +113,8 @@ export HF_ENDPOINT=https://hf-mirror.com
 3. Download the required model weights:
 ```bash
 huggingface-cli download anonymousdb/LOVE-pretrain temporal.pth --local-dir ./
-huggingface-cli download IntMeGroup/ICCVW_mos0_8B --local-dir ./IntMeGroup/26B_mos0_20_ep49_6835
-huggingface-cli download IntMeGroup/ICCVW_mos0_st222 --local-dir ./IntMeGroup/26B_mos0_100_ep6_6802
+huggingface-cli download IntMeGroup/26B_mos0_20_ep49_6835 --local-dir ./IntMeGroup/26B_mos0_20_ep49_6835
+huggingface-cli download IntMeGroup/26B_mos0_100_ep6_6802 --local-dir ./IntMeGroup/26B_mos0_100_ep6_6802
 ```
 
 ### 📁 Prepare dataset
