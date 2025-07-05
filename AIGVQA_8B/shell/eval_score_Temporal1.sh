@@ -24,7 +24,7 @@ torchrun \
   --nproc_per_node=${GPUS} \
   --master_port=${MASTER_PORT} \
   train/stage2_eval_AIGV.py \
-   --model_name_or_path "IntMeGroup/ICCVW_mos4_8B \
+   --model_name_or_path "IntMeGroup/ICCVW_mos4_8B" \
   --conv_style "internlm2-chat" \
   --output_dir ${OUTPUT_DIR} \
   --meta_path "data/GenAI_mos${number}.json"\
