@@ -326,7 +326,7 @@ First delete the "test/" in the video_name colum and then sort the 9 .csv file a
 ### Calculate the Overall_MOS in the 9 .csv file to get the final 4 scores.
 ### Traditional Score = AIGVQA_8B/weights/eval/mos1_1/mos1.csv x0.6 + AIGVQA_26B/weights/eval/mos1_2/mos1.csv x0.4
 ### Alignment Score = AIGVQA_26B/weights/eval/mos2_1/mos2.csv x0.5 + AIGVQA_26B/weights/eval/mos2_2/mos2.csv x0.5
-### Aesthetic Score = AIGVQA_9B/weights/eval/mos3_4/mos3.csv x0.5 + AIGVQA_8B/weights/eval/mos3_1/mos3.csv x0.5
+### Aesthetic Score = AIGVQA_9B/weights/eval/mos3_2/mos3.csv x0.5 + AIGVQA_8B/weights/eval/mos3_1/mos3.csv x0.5
 ### Temporal Score = AIGVQA_8B/weights/eval/mos4_1/mos4.csv x0.4 + AIGVQA_26B/weights/eval/mos4_2/mos4.csv x0.2 + AIGVQA_26B/weights/eval/mos4_3/mos4.csv x0.4
 Or you can simply run the python file to process the 9 .csv file
 ```bash
