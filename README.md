@@ -138,7 +138,7 @@ Run the evaluation script:
 sh shell/eval_score_overall3.sh
 sh shell/eval_score_overall4.sh
 ```
-## 📊 Output File and Score process
+## 📊 Output Files and Score process
 After the evaluation you will get 4 score files
 ```bash
  output_files = [
@@ -149,7 +149,7 @@ After the evaluation you will get 4 score files
     ]
 ```
 First delete the "test/" in the video_name colum and then sort the 4 .csv file according to the video_name.
-# Average the Overall_MOS in the 4 .csv file to get the final Overall score.
+### Average the Overall_MOS in the 4 .csv file to get the final Overall score.
 Or you can simply run the python file to process the 4 .csv file
 ```bash
 cd ..
