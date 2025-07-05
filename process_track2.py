@@ -81,7 +81,7 @@ def main():
     final_df = merged_df[output_columns].sort_values(by='video_name').reset_index(drop=True)
 
     # Save to Excel
-    output_filename = 'prediction.xlsx'
+    output_filename = 'prediction2.xlsx'
     try:
         final_df.to_excel(output_filename, index=False)
         print(f"Successfully created {output_filename}")
