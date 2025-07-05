@@ -138,7 +138,24 @@ Run the evaluation script:
 sh shell/eval_score_overall3.sh
 sh shell/eval_score_overall4.sh
 ```
-
+## 📊 Output File and Score process
+After the evaluation you will get 4 score files
+```bash
+ output_files = [
+        'AIGVQA_8B/weights/eval/mos0_1/mos0.csv',
+        'AIGVQA_8B/weights/eval/mos0_2/mos0.csv',
+        'AIGVQA_26B/weights/eval/mos0_3/mos0.csv',
+        'AIGVQA_26B/weights/eval/mos0_4/mos0.csv'
+    ]
+```
+First delete the "test/" in the video_name colum and then sort the 4 .csv file according to the video_name.
+# Average the Overall_MOS in the 4 .csv file to get the final Overall score.
+Or you can simply run the python file to process the 4 .csv file
+```bash
+cd ..
+python process_overall.py
+```
+you will get the prediction.xlsx
 
 # Track II - 4 Dimension Score Calculation
 Traditional_MOS -- MOS1
