@@ -280,8 +280,8 @@ huggingface-cli download anonymousdb/LOVE-pretrain temporal.pth --local-dir ./
 huggingface-cli download IntMeGroup/26B_mos1_ep2 --local-dir ./IntMeGroup/26B_mos1_ep2
 huggingface-cli download IntMeGroup/26B_mos2_ep92 --local-dir ./IntMeGroup/26B_mos2_ep92
 huggingface-cli download IntMeGroup/26B_mos2_100_ep16_6458 --local-dir ./IntMeGroup/26B_mos2_100_ep16_6458
-huggingface-cli download IntMeGroup/26B_mos4_20_ep33_8076 --local-dir ./IntMeGroup/26B_mos4_20_ep33_8076
 huggingface-cli download IntMeGroup/26B_mos4_ep92 --local-dir ./IntMeGroup/26B_mos4_ep92
+huggingface-cli download IntMeGroup/26B_mos4_20_ep33_8076 --local-dir ./IntMeGroup/26B_mos4_20_ep33_8076
 ```
 ### 📁 Prepare dataset
 1. Refine the /data/GenAI_mos1.json & /data/GenAI_mos2.json & /data/GenAI_mos3.json & /data/GenAI_mos4.json file with the correct path:
@@ -324,6 +324,10 @@ After the evaluation you will get 9 score files
 ```
 First delete the "test/" in the video_name colum and then sort the 9 .csv file according to the video_name.
 ### Calculate the Overall_MOS in the 9 .csv file to get the final 4 scores.
+### Traditional Score = AIGVQA_8B/weights/eval/mos1_1/mos1.csv x0.6 + AIGVQA_26B/weights/eval/mos1_2/mos1.csv x0.4
+### Alignment Score = AIGVQA_26B/weights/eval/mos2_1/mos2.csv x0.5 + AIGVQA_26B/weights/eval/mos2_2/mos2.csv x0.5
+### Aesthetic Score = AIGVQA_9B/weights/eval/mos3_4/mos3.csv x0.5 + AIGVQA_8B/weights/eval/mos3_1/mos3.csv x0.5
+### Temporal Score = AIGVQA_8B/weights/eval/mos4_1/mos4.csv x0.4 + AIGVQA_26B/weights/eval/mos4_2/mos4.csv x0.2 + AIGVQA_26B/weights/eval/mos4_3/mos4.csv x0.4
 Or you can simply run the python file to process the 9 .csv file
 ```bash
 cd ..
