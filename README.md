@@ -42,7 +42,7 @@ python setup.py install
 
 The **Overall Score** is calculated as:
 
-### Overall Score = Score_8B_1 + Score_8B_2+ Score_26B_1 + Score_26B_2
+### Overall Score = Score_8B_1x0.25 + Score_8B_2x0.25+ Score_26B_1x0.25 + Score_26B_2x0.25
 
 ---
 
@@ -65,7 +65,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 
 3. Download the required model weights:
 ```bash
-huggingface-cli download anonymousdb/LOVE-pretrain temporal.pth ./
+huggingface-cli download anonymousdb/LOVE-pretrain temporal.pth --local-dir ./
 huggingface-cli download IntMeGroup/ICCVW_mos0_8B ./IntMeGroup/ICCVW_mos0_8B 
 huggingface-cli download IntMeGroup/ICCVW_mos0_st222 ./IntMeGroup/ICCVW_mos0_st222 
 ```
@@ -91,6 +91,53 @@ Run the evaluation script:
 sh shell/eval_score_overall1.sh
 sh shell/eval_score_overall2.sh
 ```
+
+### For **Score_26B_1** and **Score_26B_2**, follow the steps below:
+
+## 🔧 **Preparation**
+
+### 📦 **Prepare Model Weights**
+
+1. Navigate to the `AIGVQA_26B` directory: 
+
+```bash
+cd AIGVQA_26B
+```
+
+2. Set the Hugging Face endpoint:
+```bash
+export HF_ENDPOINT=https://hf-mirror.com
+```
+
+3. Download the required model weights:
+```bash
+huggingface-cli download anonymousdb/LOVE-pretrain temporal.pth --local-dir ./
+huggingface-cli download IntMeGroup/ICCVW_mos0_8B ./IntMeGroup/26B_mos0_20_ep49_6835
+huggingface-cli download IntMeGroup/ICCVW_mos0_st222 ./IntMeGroup/26B_mos0_100_ep6_6802
+```
+
+### 📁 Prepare dataset
+1. Refine the /data/GenAI_mos0.json file with the correct path:
+```bash 
+"root": your_path_to_GenAIBench
+```
+
+2. Ensure the dataset is structured as follows:
+```bash 
+GenAIBench
+├── val
+├── train
+└── test
+```
+### make sure the final test images are in dictory GenAIBench/test
+
+## 🚀 Evaluation
+Run the evaluation script:
+```bash
+sh shell/eval_score_overall3.sh
+sh shell/eval_score_overall4.sh
+```
+
 
 # Track II - 4 Dimension Score Calculation
 Traditional_MOS -- MOS1
